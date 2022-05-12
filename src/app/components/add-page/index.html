@@ -1,0 +1,10 @@
+<div class="container mt-5 mb-5">
+  <h1>Добавление товара</h1>
+  <form action="/gpu/add" method="post">
+    <input [(ngModel)]="gpu.img" type='text' name="title" placeholder="Введите ссылку на фото" class="form-control"><br>
+    <input [(ngModel)]="gpu.title" type='text' name="title" placeholder="Введите название" class="form-control"><br>
+    <textarea [(ngModel)]="gpu.full_text" name="full_text" placeholder="Введите информацию о товаре" class="form-control"></textarea><br>
+    <input [(ngModel)]="gpu.price" type='int' name="price" placeholder="Введите цену" class="form-control"><br>
+    <button (click)="addGpu()" type="submit" class="btn btn-success">Внести товар в каталог</button>
+  </form>
+</div>

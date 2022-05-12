@@ -1,0 +1,5 @@
+<div class="container mt-5">
+    <h1>Вендоры видеокарт</h1>
+    <gpu-item *ngFor="let gp of gpus; let i = index" [id]="i" [img]="gp.img" [title]="gp.title" [price]="gp.price" [full_text]="gp.full_text" class=""></gpu-item>
+    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Cообщить о неточности в товаре</button>
+</div>
